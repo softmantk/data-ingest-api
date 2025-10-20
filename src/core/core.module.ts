@@ -10,7 +10,7 @@ import { S3LoaderService } from '../feeder/common/services/loaders/s3.loader.ser
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (config: ConfigService) => ({
-        uri: config.get<string>('MONGODB_URL') || 'mongodb://localhost:27027/buenrono',
+        uri: config.get<string>('MONGODB_URL') || 'mongodb://localhost:27028/buenrono',
       }),
       inject: [ConfigService],
     }),
