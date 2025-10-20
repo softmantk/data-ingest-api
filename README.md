@@ -8,6 +8,16 @@ Case study
 
 ## Project setup
 
+### Requirement
+1. Nodejs
+2. Mongodb / Docker compose
+
+### Run Command
+1. if you have docker installed, run the mongodb
+    ```shell
+        docker compose up -d
+    ```
+2. Install packages.
 ```bash
 npm install
 ```

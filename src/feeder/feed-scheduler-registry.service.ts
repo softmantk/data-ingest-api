@@ -26,7 +26,7 @@ export class FeedSchedulerRegistryService {
       const job = new CronJob(feed.scheduledAt, async () => {
         await this.feedRunnerService.composeStreamFeeds(feed);
       });
-      await this.feedRunnerService.composeStreamFeeds(feed);
+      await this.feedRunnerService.composeStreamFeeds(feed); // running everything on start up for debugging purpose
 
       this.schedulerRegistry.addCronJob(feed.name, job);
     });
